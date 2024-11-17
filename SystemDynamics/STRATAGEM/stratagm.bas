@@ -1,0 +1,257 @@
+10 ' KONDRATIEV WAVE GAME
+20 '
+30 ' JOHN D. STERMAN, JULY 1984
+40 '
+50 ' COPYRIGHT (C) 1984 BY SYSTEM DYNAMICS GROUP
+60 ' SLOAN SCHOOL OF MANAGEMENT
+70 ' E40-294
+80 ' MASSACHUSSETTS INSTITUTE OF TECHNOLOGY
+90 ' CAMBRIDGE MA 02139
+100 ' 
+110 ' 
+120 ' DEFINITIONS
+130 '
+140 '   BG = BACKLOG OF GOODS SECTOR
+150 '   BC = BACKLOG OF CAPITAL SECTOR
+152 '    D = DEPRECIATION OF CAPITAL STOCK
+160 '   DS = FRACTION OF DEMAND SATISFIED
+170 '   NC = NEW ORDERS FROM CAPITAL SECTOR
+180 '   NG = NEW ORDERS FROM GOODS SECTOR
+190 '  NG1 = AVERAGE ORDERS AFTER STEP IN YEAR 4
+200 '   PC = CAPITAL STOCK
+210 '    D = DEPRECIATION OF CAPITAL STOCK
+220 '   PR = PRODUCTION
+230 '   RR = RANGE OF RANDOMNESS
+240 '    S = SCORE
+250 '   SC = SHIPMENTS TO CAPITAL SECTOR
+260 '   SG = SHIPMENTS TO GOODS SCTOR
+270 '
+280 ' DELAY LOOP FOR FIRST SCREEN
+290 '
+300 KEY OFF
+310 CLS
+320 PRINT:PRINT:PRINT:PRINT:PRINT
+330 PRINT "	KONDRATIEV GAME"
+340 PRINT
+350 PRINT
+360 XYZ%=XYZ%+1
+370 PRINT "	J. STERMAN, 1984"
+380 FOR TMLP%=0 TO 8000 STEP 1
+390 XYZ%=XYZ%+1
+410 NEXT TMLP%
+420 CLS
+430 '
+440 ' INITIAL VALUES
+450 '
+460 DIM R(11,36)
+470 PC%=500
+480 NC%=50
+490 '
+500 ' COMPUTATIONAL LOOP, 70 YEARS
+510 '
+520 RR%=0
+530 NG1%=500	'Average orders after step in year 4
+540 FOR T%=0 TO 70 STEP 2
+550 IF T%<=2 THEN NG%=450 ELSE NG%=NG1%+INT(((RND-.5)*RR%)/10)*10 
+560 BC%=BC%+NC%
+570 BG%=BG%+NG%
+580 DP%=BC%+BG%
+590 PC%=PC%+SC%-D%
+600 '
+610 ' COMPUTATION OF SCORE
+620 '
+630 S1%=ABS(DP%-PC%)/100
+640 S2%=S2%+S1%
+650 S%=100*S2%/((T%/2)+1)
+660 '
+665 ' Production and fraction of demand satisfied
+670 '
+680 IF PC%>DP% THEN PR%=DP% ELSE PR%=PC%
+690 DS%=INT(((PR%/DP%)+.005)*100)
+692 '
+693 ' Write values into results matrix
+694 '
+700 R(1,T%/2+1)=NG%
+710 R(2,T%/2+1)=BG%
+720 R(3,T%/2+1)=BC%
+730 R(4,T%/2+1)=DP%
+740 R(5,T%/2+1)=PC%
+750 '
+760 ' CALCULATE NEW RATES
+770 '
+780 D%=INT((PC%*.1/10)+.5)*10
+790 SG%=INT(((DS%/100)*BG%)/10+.5)*10
+800 SC%=PR%-SG%
+810 '
+812 ' More results...
+814 '
+820 R(6,T%/2+1)=D%
+830 R(7,T%/2+1)=PR%
+840 R(8,T%/2+1)=DS%
+850 R(9,T%/2+1)=SG%
+860 R(10,T%/2+1)=SC%
+870 '
+880 ' PRINT CURRENT PERIOD VALUES
+890 ' 
+900 CLS
+910 PRINT "	Year ";T%;"  SCORE ";S%;S1%;S2%
+920 PRINT
+930 PRINT USING "       0. New orders from goods sector  #######";NG%
+940 PRINT
+950 PRINT USING "       1. Backlog of goods sector       #######";BG%
+960 PRINT
+970 PRINT USING "       2. Backlog of capital sector     #######";BC%
+980 PRINT
+990 PRINT USING "       3. Desired production            #######";DP%
+1000 PRINT
+1010 PRINT USING "       4. Capital stock                 #######";PC%
+1020 PRINT
+1030 PRINT USING "       5. Depreciation                  #######";D%
+1040 PRINT
+1050 PRINT USING "       6. Production                    #######";PR%
+1060 PRINT
+1070 PRINT USING "       7. Fraction of demand satisfied  #######%";DS%
+1080 PRINT
+1090 PRINT USING "       8. Ship. to goods sector         #######";SG%
+1100 PRINT
+1110 PRINT USING "       9. Ship. to capital sector       #######";SC%
+1120 PRINT
+1130 INPUT "    10. New orders for cap. sector";NC
+1140 '
+1150 ' CHECK FOR INVALID ENTRIES
+1160 '
+1170 IF NC>=0 THEN 1200
+1180 BEEP:PRINT "You must enter a positive number, try again"
+1190 GOTO 1130
+1200 IF NC<32760 THEN 1260
+1210 BEEP:PRINT "You must enter a smaller number, try again"
+1220 GOTO 1130
+1230 '
+1240 ' ROUND NEW ORDERS TO NEAREST 10 UNITS
+1250 '
+1260 NC%=INT((NC/10)+.5)*10
+1270 '
+1280 R(11,T%/2+1)=NC%	'Write new orders into results matrix
+1290 '
+1300 INPUT "<return> to continue, <q> to quit, <p> to plot";C$
+1310 BC%=BC%-SC%
+1320 BG%=BG%-SG%
+1330 IF C$="q" OR C$="Q" THEN 1400
+1340 IF C$="p" OR C$="P" THEN 1520
+1350 '
+1360 NEXT T%
+1370 '
+1380 ' PRINT SCORE
+1390 ' 
+1400 CLS
+1410 PRINT:PRINT:PRINT:PRINT
+1420 PRINT USING "      Your score was ####";S%
+1430 PRINT:PRINT:PRINT
+1440 IF S%<=100 THEN PRINT "         Congratulations, you should be managing the economy!"
+1450 IF 100<S% AND S%<=200 THEN PRINT "              Nice job!"
+1460 IF S%>200 THEN PRINT "              Surf's up!"
+1470 PRINT:PRINT:PRINT:PRINT:PRINT:PRINT
+1480 PRINT:PRINT:PRINT:PRINT:PRINT:PRINT
+1490 INPUT "<return> to plot results, q to quit";P$
+1500 IF P$="q" OR P$="Q" THEN 2190
+1520 '
+1530 ' PLOTTING SUBROUTINE
+1540 '
+1550 YM%=2500	'Maximum value on vertical scale
+1560 SCREEN 0,0:CLS
+1570 TIMEND=T%-2
+1580 '
+1590 ' PRINT TIME AXIS
+1600 '
+1610 FOR LABEL=0 TO 65 STEP 5
+1620 PLABEL=LABEL+8
+1630 LOCATE 22,PLABEL:PRINT LABEL;
+1640 NEXT LABEL
+1650 '
+1660 ' PRINT LEGEND
+1670 '
+1680 LOCATE 24,1
+1690 PRINT "G = NEW ORDERS FROM GOODS SECTOR    C = NEW ORDERS FROM CAPITAL SECTOR";
+1700 LOCATE 25,1
+1710 PRINT "P = PRODUCTION        S = CAPITAL STOCK      D = DESIRED PRODUCTION";
+1720 '
+1730 ' PRINT GRID
+1740 '
+1750 FOR HGRID%=8 TO 80 STEP 1
+1760 LOCATE 21,HGRID%
+1770 PRINT "_";
+1780 NEXT HGRID%
+1790 FOR VGRID%=1 TO 21 STEP 1
+1800 LOCATE VGRID%,8
+1810 PRINT "|"
+1820 NEXT VGRID%
+1830 '
+1840 ' PRINT VERTICAL SCALE
+1850 '
+1860 FOR VLABEL%=1 TO 21 STEP 4
+1870 LOCATE VLABEL%,1:PRINT (YM%/20)*(21-VLABEL%)
+1880 NEXT VLABEL%
+1890 '
+1900 ' PRINT SCORE
+1910 '
+1920 LOCATE 1,68:PRINT "SCORE= ";S%
+1930 '
+1940 ' PLOT VARIABLES
+1950 '
+1960 FOR I=1 TO 11
+1962 '
+1963 ' Don't print variables 2,3,6,8,9, or 10
+1964 '
+1970 IF I=2 OR I=3 OR I=6 OR I=8 OR I=9 OR I=10 THEN GOTO 2060
+1980 FOR TPLOT=0 TO TIMEND STEP 2
+1990 IF R(I,TPLOT/2+1)*20/YM%>20 THEN Y=1 ELSE IF R(I,TPLOT/2+1)*20/YM%<1 THEN Y=21 ELSE Y=21-R(I,TPLOT/2+1)*20/YM%
+2000 X=TPLOT+9
+2010 LOCATE Y,X
+2020 IF I=1 THEN PRINT "G"; ELSE IF I=11 THEN PRINT "C";
+2030 IF I=4 THEN PRINT "D"; ELSE IF 1=5 THEN PRINT "S"; ELSE IF I=7 THEN PRINT "P";
+2040 NEXT TPLOT
+2050 INPUT Z$
+2060 NEXT I
+2070 '
+2080 ' ask for replot
+2090 '
+2100 LOCATE 25,1 'NOTE PRINT REMOVED
+2110 INPUT "Do you want to re-plot results on another scale <y/n>";PLOT$
+2120 IF PLOT$<>"y" AND PLOT$<>"Y" THEN 2150
+2130 INPUT "Enter the maximum value for the vertical axis";YM%
+2140 GOTO 1560
+2150 IF C$="p" OR C$="P" THEN 1360
+2160 '
+2170 ' PRINTOUT OF RESULTS
+2180 '
+2190 PRINT:INPUT "Do you want a printout of the results <y/n>";PR$
+2200 IF PR$<>"y" AND PR$<>"Y" THEN GOTO 2440
+2210 LPRINT "YEAR                               VARIABLE"
+2220 LPRINT
+2230 LPRINT "        0.    1.    2.    3.    4.    5.    6.    7.    8.    9.    10."
+2240 LPRINT "______________________________________________________________________________________"
+2250 LPRINT
+2260 FOR T%=0 TO 70 STEP 2
+2270 LPRINT USING " ##   ####  ####  ####  ####  ####  ####  ####  ####  ####  ####  ####";T%,R(1,T%/2+1),R(2,T%/2+1),R(3,T%/2+1),R(4,T%/2+1),R(5,T%/2+1),R(6,T%/2+1),R(7,T%/2+1),R(8,T%/2+1),R(9,T%/2+1),R(10,T%/2+1),R(11,T%/2+1)
+2280 NEXT T%
+2290 '
+2300 ' print variable key
+2310 '
+2320 LPRINT:LPRINT "Score: ";S%:LPRINT
+2330 LPRINT "0.	New orders from goods sector"
+2340 LPRINT "1.	Backlog of unfilled orders from goods sector"
+2350 LPRINT "2.	Backlog of unfilled orders from capital sector"
+2360 LPRINT "3.	Desired production [=1+2]"
+2370 LPRINT "4.	Production capacity"
+2380 LPRINT "5.	Depreciation of capital stock"
+2390 LPRINT "6.	Production [=MIN(3,4)]"
+2400 LPRINT "7.	Fraction of demand satisfied [=6/3]"
+2410 LPRINT "8.	Shipments to the goods sector [=7*1]"
+2420 LPRINT "9.	Shipments to the capital sector [=6-8]"
+2430 LPRINT "10. New orders from capital sector"
+2440 '
+2450 ' quit check
+2460 '
+2470 INPUT "Type q to quit, <return> to plot or print again";Q$
+2480 IF Q$<>"q" AND Q$<>"Q" THEN 2100
+2490 END
