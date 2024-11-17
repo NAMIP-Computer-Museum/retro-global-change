@@ -14,6 +14,31 @@ our world is currently facing.
 
 ## System Dynamics related
 
-### History
+### Limit to Growth (World3)
+
+year: circa 1970 (for model, DYNAMO OLDER)
+DYNAMO, evolution of SIMPLE
+IBM mainframe (then mini and micro later), punch card
+
+### STRATAGEM (serious game)
+
+PC-BASIC
+Microcomputer (IBM-PC)
 
 ## Games
+
+### SimEarth
+
+year: 1990
+C?
+note: include Daisy World
+
+### Balance of the Planet
+
+Year: 1990
+Pascal
+
+### Global Change
+
+Year: 1992
+
