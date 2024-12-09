@@ -37,7 +37,7 @@ Documentation:
 * Language: PC-BASIC, see [code here](SystemDynamics/STRATAGEM/stratagm.bas)
 * Platform: Microcomputer (IBM-PC)
 * Author: John Stearman and Dennis Meadows
-* Approach: turn oriented (by 2 years) with textual menu and text-based graphics
+* Approach: turn based (by 2 years) with textual menu and text-based graphics
 
 Documentation:
 * Paper by Stearman and Meadows (1985 version) [STRATAGEM-2](SystemDynamics/STRATAGEM/sterman1985.pdf)
@@ -90,6 +90,14 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Platform: microcomputer
 * Author: Millennium Interactive Ltd.
 
+### Anno 2070
+
+* Year 2011
+* Platform: microcomputer (STEAM)
+* Author: Related Designs, Blue Byte
+* Approach: flooded world scenario, 3 possible factions (eco, tech, tycoons)
+
+
 ### Fate of the Worlds
 
 ![Fate of the Worlds Cover](Games/FateWorlds/FateWorlds.png)
@@ -97,6 +105,7 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Year 2011
 * Platform: microcomputer (STEAM)
 * Author: Red Redemption
+* Approach: turn based (by 5 years), various socip-technico-environmental scenarios
 
 Documentation:
 * [review](https://www.destructoid.com/reviews/review-fate-of-the-world)
