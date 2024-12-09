@@ -56,6 +56,7 @@ Documentation:
 
 Documentation:
 * [game manual](Games/SimEarth/SimEarth-Manual-DOS.pdf)
+* paper [Gaia's Game](Games/SimEarth/GaiasGames.pdf)
 
 ### Balance of the Planet
 
