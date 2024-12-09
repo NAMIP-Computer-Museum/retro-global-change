@@ -48,6 +48,8 @@ Documentation:
 
 ### SimEarth
 
+![SimEarth Cover](Games/SimEarth/SimEarth.jpg)
+
 * Year: 1990
 * Language: C ?
 * Platform: microcomputer
@@ -84,7 +86,7 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Year: 1992
 * Language:
 * Platform: microcomputer
-*Author: Millennium Interactive Ltd.
+* Author: Millennium Interactive Ltd.
 
 # Licence
 
