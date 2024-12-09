@@ -59,7 +59,7 @@ Documentation:
 Documentation:
 * [game manual](Games/SimEarth/SimEarth-Manual-DOS.pdf)
 * paper [Gaia's Game](Games/SimEarth/GaiasGames.pdf)
-* [official strategy guide][https://archive.org/details/simearth00ruse]
+* [official strategy guide](https://archive.org/details/simearth00ruse)
 
 ### Balance of the Planet
 
@@ -89,6 +89,17 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Language:
 * Platform: microcomputer
 * Author: Millennium Interactive Ltd.
+
+### Fate of the Worlds
+
+![Fate of the Worlds Cover](Games/FateWorlds/FateWorlds.png)
+
+* Year 2011
+* Platform: microcomputer (STEAM)
+* Author: Red Redemption
+
+Documentation:
+* [review](https://www.destructoid.com/reviews/review-fate-of-the-world)
 
 # Licence
 
