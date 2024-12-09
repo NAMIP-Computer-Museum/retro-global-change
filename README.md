@@ -39,9 +39,9 @@ Platform: Microcomputer (IBM-PC)
 Author: John Stearman and Dennis Meadows
 
 Documentation:
-* Paper by Stearman and Meadows (1985 version) (STRATAGEM-2)[SystemDynamics/STRATAGEM/sterman1985.pdf
+* Paper by Stearman and Meadows (1985 version) [STRATAGEM-2](SystemDynamics/STRATAGEM/sterman1985.pdf)
 ] with source code in annex
-* more information (about Kondratieff waves)[SystemDynamics/STRATAGEM/Kondratieff_Waves_in_the_World_System_Perspective.pdf]
+* more information [about Kondratieff waves](SystemDynamics/STRATAGEM/Kondratieff_Waves_in_the_World_System_Perspective.pdf)
 
 ## Games
 
@@ -54,7 +54,7 @@ Author: Will Wright
 note: includes Daisy World simulation
 
 Documentation:
-* (game manual)[Games/SimEarth/SimEarth-Manual-DOS.pdf]
+* [game manual](Games/SimEarth/SimEarth-Manual-DOS.pdf)
 
 ### Balance of the Planet
 
@@ -64,8 +64,8 @@ Platform: microcomputer
 Author: Chris Crawford
 
 Source code:
-* Chris Crawford Erasmatazz website (https://www.erasmatazz.com/library/source-code/index.html)
-* (local archive of Pascal version)[Games/BOTP/balance-of-the-planet.zip]
+* [Chris Crawford Erasmatazz website](https://www.erasmatazz.com/library/source-code/index.html)
+* [local archive of Pascal version](Games/BOTP/balance-of-the-planet.zip)
 
 Documentation:
 * Manual (text version vs full version)
