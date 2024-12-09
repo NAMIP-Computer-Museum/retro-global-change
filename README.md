@@ -19,36 +19,49 @@ our world is currently facing.
 
 Year: circa 1970 (for model, DYNAMO OLDER)
 Language: DYNAMO, evolution of SIMPLE, pure text (later enriched with graphical language STELLA)
-IBM mainframe (initially on punch card) then ported to mini and micro, implemented in ASM then FORTRAN
+Platform: IBM mainframe (initially on punch card) then ported to mini and micro, implemented in ASM then FORTRAN
 approach: code generation, low/no code already (textual then graphical) to be used by non computer programmers
 
+Simulator (Bernd Fix)
+* Not much available of the original software but there is a nice [simulator for DYNAMO](https://github.com/bfix/dynamo) by Bernd Fix
+* about [Bernd Fix](https://en.wikipedia.org/wiki/Bernd_Fix) (maybe not expected here)
+
 documentation:
+* Original DYNAMO [user manual](SystemDynamics/LTG/dynamousersmanua00pugh.pdf)
+* Review paper from 1990: (World Dynamics revisited, a Realistic World Model Simulation)[SystemDynamics/LTG/chagchit1990.pdf]
+
 
 ### STRATAGEM (serious game)
 
-PC-BASIC, see [code here](STRATAGEM/stratagm.bas)
-Microcomputer (IBM-PC)
+Year: 1985 (maybe earlier version to check)
+Language: PC-BASIC, see [code here](SystemDynamics/STRATAGEM/stratagm.bas)
+Platform: Microcomputer (IBM-PC)
 
 Documentation:
-* 1985 paper
-* about Kondratieff waves
+* Paper by Stearman and Meadows (1985 version) (STRATAGEM-2)[SystemDynamics/STRATAGEM/sterman1985.pdf
+] with source code in annex
+* more information (about Kondratieff waves)[SystemDynamics/STRATAGEM/Kondratieff_Waves_in_the_World_System_Perspective.pdf]
 
 ## Games
 
 ### SimEarth
 
-year: 1990
-C?
-note: include Daisy World
+Year: 1990
+Language: C ?
+Platform: microcomputer
+note: includes Daisy World simulation
 
 ### Balance of the Planet
 
 Year: 1990
-Pascal
+Language: Pascal (Mac)
+Platform: microcomputer
 
-### Global Change
+### Global Effect
 
 Year: 1992
+Language:
+Platform: microcomputer
 
 # Licence
 
