@@ -17,11 +17,11 @@ our world is currently facing.
 
 ### Limit to Growth (World3)
 
-Year: circa 1970 (for model, DYNAMO OLDER)
-Language: DYNAMO, evolution of SIMPLE, pure text (later enriched with graphical language STELLA)
-Platform: IBM mainframe (initially on punch card) then ported to mini and micro, implemented in ASM then FORTRAN
-approach: code generation, low/no code already (textual then graphical) to be used by non computer programmers
-Authors: Donella Hager-Meadows, Dennis L. Meadows, Jorgen Randers and William W. Behrens III.
+* Year: circa 1970 (for model, DYNAMO OLDER)
+* Language: DYNAMO, evolution of SIMPLE, pure text (later enriched with graphical language STELLA)
+* Platform: IBM mainframe (initially on punch card) then ported to mini and micro, implemented in ASM then FORTRAN
+* Authors: Donella Hager-Meadows, Dennis L. Meadows, Jorgen Randers and William W. Behrens III.
+* Approach: code generation, low/no code already (textual then graphical) to be used by non computer programmers
 
 Simulator (Bernd Fix)
 * Not much available of the original software but there is a nice [simulator for DYNAMO](https://github.com/bfix/dynamo) by Bernd Fix
@@ -33,10 +33,11 @@ Documentation:
 
 ### STRATAGEM (serious game)
 
-Year: 1985 (maybe earlier version to check)
-Language: PC-BASIC, see [code here](SystemDynamics/STRATAGEM/stratagm.bas)
-Platform: Microcomputer (IBM-PC)
-Author: John Stearman and Dennis Meadows
+* Year: 1985 (maybe earlier version to check)
+* Language: PC-BASIC, see [code here](SystemDynamics/STRATAGEM/stratagm.bas)
+* Platform: Microcomputer (IBM-PC)
+* Author: John Stearman and Dennis Meadows
+* Approach: turn oriented (by 2 years) with textual menu and text-based graphics
 
 Documentation:
 * Paper by Stearman and Meadows (1985 version) [STRATAGEM-2](SystemDynamics/STRATAGEM/sterman1985.pdf)
@@ -47,11 +48,11 @@ Documentation:
 
 ### SimEarth
 
-Year: 1990
-Language: C ?
-Platform: microcomputer
-Author: Will Wright
-note: includes Daisy World simulation
+* Year: 1990
+* Language: C ?
+* Platform: microcomputer
+* Author: Will Wright
+* note: includes Daisy World simulation
 
 Documentation:
 * [game manual](Games/SimEarth/SimEarth-Manual-DOS.pdf)
@@ -60,10 +61,10 @@ Documentation:
 
 ![BOTP Cover](Games/BOTP/BOTP.jpg)
 
-Year: 1990
-Language: Macintosh Pascal (and Java rewrite around 2010) 
-Platform: microcomputer
-Author: Chris Crawford
+* Year: 1990
+* Language: Macintosh Pascal (and Java rewrite around 2010) 
+* Platform: microcomputer
+* Author: Chris Crawford
 
 Source code:
 * [Chris Crawford Erasmatazz website](https://www.erasmatazz.com/library/source-code/index.html)
@@ -79,10 +80,10 @@ right into their faces. It turns out that, if you assign equal values to both fo
 
 ![Global Effect Cover](Games/GlobalEffect/GlobalEffect.jpg)
 
-Year: 1992
-Language:
-Platform: microcomputer
-Author: Millennium Interactive Ltd.
+* Year: 1992
+* Language:
+* Platform: microcomputer
+*Author: Millennium Interactive Ltd.
 
 # Licence
 
