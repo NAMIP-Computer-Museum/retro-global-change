@@ -58,7 +58,7 @@ Documentation:
 
 ### Balance of the Planet
 
-![BOTP Cover](BOTP.jpg)
+![BOTP Cover](Games/BOTP/BOTP.jpg)
 
 Year: 1990
 Language: Macintosh Pascal (and Java rewrite around 2010) 
@@ -77,7 +77,7 @@ right into their faces. It turns out that, if you assign equal values to both fo
 
 ### Global Effect
 
-![Global Effect Cover](GlobalEffect.jpg)
+![Global Effect Cover](Games/GlobalEffect/GlobalEffect.jpg)
 
 Year: 1992
 Language:
