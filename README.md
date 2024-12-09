@@ -59,6 +59,7 @@ Documentation:
 Documentation:
 * [game manual](Games/SimEarth/SimEarth-Manual-DOS.pdf)
 * paper [Gaia's Game](Games/SimEarth/GaiasGames.pdf)
+* [official strategy guide][https://archive.org/details/simearth00ruse]
 
 ### Balance of the Planet
 
@@ -76,7 +77,8 @@ Source code:
 Documentation:
 * Manual (text version vs full version)
 
-Forcing the player to explicitly assign point values for human life puts a lot of stress on people, stress that most people avoid by refusing to think about it. This game shoved the problem 
+Quote:
+* Forcing the player to explicitly assign point values for human life puts a lot of stress on people, stress that most people avoid by refusing to think about it. This game shoved the problem 
 right into their faces. It turns out that, if you assign equal values to both forms of death, you can never win the game, because the number of people who die from starvation each year is overwhelming.
 
 ### Global Effect
