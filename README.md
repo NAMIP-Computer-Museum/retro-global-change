@@ -11,6 +11,7 @@ the evolution of computer languages and the exponential growth of computation po
 It will conclude with some thoughts based on the emerging global picture in the context of the challenges 
 our world is currently facing.
 
+![Global Change pixelated logo](logo.png)
 
 ## System Dynamics related
 
@@ -42,3 +43,8 @@ Pascal
 
 Year: 1992
 
+# Licence
+
+* The original documentation material of this github page is released under Creative Commons, Share Alike.
+* Resource under version control are not mirrored here, see their respective repoitiory for licence (e.g. GNU Affero for Bernd Fix's DYNAMO or GNU GPL for micropolis by Don Hopkins)
+* Note some retrocomputing projects have released their source code without specific licence (e.g. Global Change source archive by Chris Crawford which is mirrored here or STRATAGEM which was retyped from listing)
