@@ -11,20 +11,27 @@ the evolution of computer languages and the exponential growth of computation po
 It will conclude with some thoughts based on the emerging global picture in the context of the challenges 
 our world is currently facing.
 
-![Global Change pixelated logo](logo.png)
+![Global Change pixelated logo](LTG-pixel.png)
 
 ## System Dynamics related
 
 ### Limit to Growth (World3)
 
-year: circa 1970 (for model, DYNAMO OLDER)
-DYNAMO, evolution of SIMPLE
-IBM mainframe (then mini and micro later), punch card
+Year: circa 1970 (for model, DYNAMO OLDER)
+Language: DYNAMO, evolution of SIMPLE, pure text (later enriched with graphical language STELLA)
+IBM mainframe (initially on punch card) then ported to mini and micro, implemented in ASM then FORTRAN
+approach: code generation, low/no code already (textual then graphical) to be used by non computer programmers
+
+documentation:
 
 ### STRATAGEM (serious game)
 
-PC-BASIC
+PC-BASIC, see [code here](STRATAGEM/stratagm.bas)
 Microcomputer (IBM-PC)
+
+Documentation:
+* 1985 paper
+* about Kondratieff waves
 
 ## Games
 
