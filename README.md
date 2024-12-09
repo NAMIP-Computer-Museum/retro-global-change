@@ -58,6 +58,8 @@ Documentation:
 
 ### Balance of the Planet
 
+![BOTP Cover](BOTP.jpg)
+
 Year: 1990
 Language: Macintosh Pascal (and Java rewrite around 2010) 
 Platform: microcomputer
@@ -74,6 +76,8 @@ Forcing the player to explicitly assign point values for human life puts a lot o
 right into their faces. It turns out that, if you assign equal values to both forms of death, you can never win the game, because the number of people who die from starvation each year is overwhelming.
 
 ### Global Effect
+
+![Global Effect Cover](GlobalEffect.jpg)
 
 Year: 1992
 Language:
