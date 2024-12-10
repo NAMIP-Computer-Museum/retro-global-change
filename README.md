@@ -97,12 +97,25 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Year 2006
 * Language: flash
 * Platform: web-browser
-* Author: Red Redemption Ltd
+* Author: Red Redemption Ltd (Ian Roberts)
 * Approach: turn-based policy decision/negociation game
 
 Documentation
 * [original game website](https://www.bbc.co.uk/sn/hottopics/climatechange/climate_challenge/aboutgame.shtml) at BBC 
 * [flashpoint player](https://flashpointarchive.org/) (open source) with archived game  
+
+### Fate of the Worlds
+
+![Fate of the Worlds Cover](Games/FateWorlds/FateWorlds.png)
+
+* Year 2011
+* Platform: microcomputer (STEAM)
+* Author: Red Redemption (Ian Roberts)
+* Approach: turn based (by 5 years), various socip-technico-environmental scenarios
+
+Documentation:
+* [review](https://www.destructoid.com/reviews/review-fate-of-the-world)
+* [slides by Ian Roberts](https://fr.slideshare.net/slideshow/the-emergence-of-serious-games-and-the-case-of-fate-of-the-world-ian-roberts/10459626#6)
 
 ### Anno 2070
 
@@ -112,18 +125,6 @@ Documentation
 * Platform: microcomputer (STEAM)
 * Author: Related Designs, Blue Byte
 * Approach: flooded world scenario, 3 possible factions (eco, tech, tycoons)
-
-### Fate of the Worlds
-
-![Fate of the Worlds Cover](Games/FateWorlds/FateWorlds.png)
-
-* Year 2011
-* Platform: microcomputer (STEAM)
-* Author: Red Redemption
-* Approach: turn based (by 5 years), various socip-technico-environmental scenarios
-
-Documentation:
-* [review](https://www.destructoid.com/reviews/review-fate-of-the-world)
 
 # Licence
 
