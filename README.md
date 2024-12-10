@@ -106,6 +106,8 @@ Documentation
 
 ### Anno 2070
 
+![Anno 2070 Cover](Games/Anno2070/Anno2070.jpg)
+
 * Year 2011
 * Platform: microcomputer (STEAM)
 * Author: Related Designs, Blue Byte
