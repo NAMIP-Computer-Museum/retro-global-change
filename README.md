@@ -90,14 +90,9 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Platform: microcomputer
 * Author: Millennium Interactive Ltd.
 
-### Anno 2070
-
-* Year 2011
-* Platform: microcomputer (STEAM)
-* Author: Related Designs, Blue Byte
-* Approach: flooded world scenario, 3 possible factions (eco, tech, tycoons)
-
 ### BBC Climate Challenge
+
+![Climate Challenge Cover](Games/ClimateChallenge/ClimateChallenge.jpg)
 
 * Year 2006
 * Language: flash
@@ -108,6 +103,13 @@ right into their faces. It turns out that, if you assign equal values to both fo
 Documentation
 * [original game website](https://www.bbc.co.uk/sn/hottopics/climatechange/climate_challenge/aboutgame.shtml) at BBC 
 * [flashpoint player](https://flashpointarchive.org/) (open source) with archived game  
+
+### Anno 2070
+
+* Year 2011
+* Platform: microcomputer (STEAM)
+* Author: Related Designs, Blue Byte
+* Approach: flooded world scenario, 3 possible factions (eco, tech, tycoons)
 
 ### Fate of the Worlds
 
