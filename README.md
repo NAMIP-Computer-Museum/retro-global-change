@@ -97,6 +97,17 @@ right into their faces. It turns out that, if you assign equal values to both fo
 * Author: Related Designs, Blue Byte
 * Approach: flooded world scenario, 3 possible factions (eco, tech, tycoons)
 
+### BBC Climate Challenge
+
+* Year 2006
+* Language: flash
+* Platform: web-browser
+* Author: Red Redemption Ltd
+* Approach: turn-based policy decision/negociation game
+
+Documentation
+* [original game website](https://www.bbc.co.uk/sn/hottopics/climatechange/climate_challenge/aboutgame.shtml) at BBC 
+* [flashpoint player](https://flashpointarchive.org/) (open source) with archived game  
 
 ### Fate of the Worlds
 
